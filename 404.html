@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishNote - Przekierowanie</title>
+    <script>
+        // Przekieruj do głównej strony
+        const path = window.location.pathname;
+        const repo = path.split('/')[1];
+        window.location.replace(`/${repo}/`);
+    </script>
+</head>
+<body>
+    <p>Przekierowywanie do FishNote...</p>
+</body>
+</html>
